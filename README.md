@@ -14,6 +14,8 @@ Marne C MathLib is a simple mathematical library implemented in C. This library 
 
 - **Square Root** (**sqroot**): Calculates the square root of a number using the iterative method of averaging.
 
+- **Fibonacci** (**fibo**): Calculates a Fibonacii from two numbers, and inserts all numbers into an array with specified size.
+
 # Examples
 
 ```c
@@ -44,6 +46,16 @@ int main() {
     // Square Root:
     float root = sqroot(81);
     printf("%f\n", root);
+
+    // Fibonacci:
+    float array[100];
+    float a = 0;
+    float b = 1;
+    float size = 100;
+    fibo(a, b, array, size);
+    for (int i = 0; i < size; i++) {
+        printf("%d\n", array[i]);
+    }
 
     return 0;
 }
