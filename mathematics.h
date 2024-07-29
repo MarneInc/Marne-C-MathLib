@@ -79,3 +79,13 @@ float sqroot(float number) {
 	}
 	return root;
 }
+
+float fibo(float a, float b, float array[], int size) {
+	float c;
+	for (int i = 0; i < size; i++) {
+		c = a + b;
+		array[i] = c;
+		a = b;
+		b = c;
+	}
+}
